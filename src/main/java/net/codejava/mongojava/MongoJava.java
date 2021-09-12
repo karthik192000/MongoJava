@@ -35,7 +35,6 @@ public class MongoJava {
         MongoClient client = MongoClients.create("MongoDB connection string");
         MongoDatabase db = client.getDatabase("Name of your database");
         MongoCollection col = db.getCollection("name of the collection");
-        //BsonDocument document = BsonDocument.parse(response.body());
         Document doc = Document.parse(json1);
         col.insertOne(doc);
         }
