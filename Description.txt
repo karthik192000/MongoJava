@@ -1,0 +1,2 @@
+Small and simple project to access git-hub user data for a particular username from git-hub API and uploading it to MongoDB database
+All the dependencies have been mentioned in pom.xml file 
