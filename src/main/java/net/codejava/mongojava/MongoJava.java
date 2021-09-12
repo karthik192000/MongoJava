@@ -32,9 +32,9 @@ public class MongoJava {
         var response = Client.send(request,HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
         String json1 = response.body();
-        MongoClient client = MongoClients.create("mongodb+srv://Admin92000:Karthik020@cluster0.3dtkv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
-        MongoDatabase db = client.getDatabase("SampleDB");
-        MongoCollection col = db.getCollection("content");
+        MongoClient client = MongoClients.create("MongoDB connection string");
+        MongoDatabase db = client.getDatabase("Name of your database");
+        MongoCollection col = db.getCollection("name of the collection");
         //BsonDocument document = BsonDocument.parse(response.body());
         Document doc = Document.parse(json1);
         col.insertOne(doc);
