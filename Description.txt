@@ -1,2 +1,4 @@
-Small and simple project to access git-hub user data for a particular username from git-hub API and uploading it to MongoDB database
-All the dependencies have been mentioned in pom.xml file 
+-Small and simple project to access git-hub user data for a particular username from git-hub API and uploading it to MongoDB database
+-User will be asked for the username of the git-hub account for which the user-data is desired to extract.
+-All the dependencies have been mentioned in pom.xml file
+-The user data for my git-hub profile was uploaded as a test in th database 'content.json' contains the collection present in the database which contains the user-data
